@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   inputs:['meal'],
   template: `
   <div class="edit-meal-info">
-    <h3>Edit Meal Info</h3>
+    <h3>Edit Meal Info for {{ meal.name }}</h3>
     <fieldset class="form-group">
       <input [(ngModel)]="meal.name" class="form-control" />
     </fieldset>
@@ -15,6 +15,9 @@ import { Meal } from './meal.model';
     </fieldset>
     <fieldset class="form-group">
       <input [(ngModel)]="meal.calories" class="form-control" />
+    </fieldset>
+    <fieldset class="form-group">
+      <input [(ngModel)]="meal.time" class="form-control" />
     </fieldset>
   </div>
    `
