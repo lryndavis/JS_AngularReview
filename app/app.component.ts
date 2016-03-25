@@ -12,8 +12,7 @@ import { Meal } from './meal.model';
        <h3>What did you eat today?</h3>
      </div>
      <meal-list
-     [mealList]="meals"
-     (onMealSelect)="mealWasSelected($event)">
+     [mealList]="meals">
      </meal-list>
    </div>
   `
@@ -22,12 +21,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor() {
     this.meals = [
+      //delicious sample meals for testing purposes
       new Meal("Hot Pretzel with Cheese", "I ate all of this", 4000, "1:00am", 0),
       new Meal("Nachos", "I ate all of this", 8000, "1:30pm", 1),
       new Meal("Fondue", "I ate so much fondue", 3000, "2:45pm",  2),
     ];
-  }
-  mealWasSelected(clickedMeal: Meal): void {
-    console.log(clickedMeal);
   }
 }

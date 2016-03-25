@@ -1,7 +1,6 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { Meal } from './meal.model';
 import { MealComponent } from './meal.component';
-import { EditMealDetailsComponent } from './edit-meal-details.component';
 import { NewMealComponent } from './new-meal.component';
 import { SortPipe } from './sort.pipe';
 
@@ -11,7 +10,7 @@ import { SortPipe } from './sort.pipe';
   inputs: ['mealList'],
   outputs: ['onMealSelect'],
   pipes: [SortPipe],
-  directives: [MealComponent, NewMealComponent, EditMealDetailsComponent],
+  directives: [MealComponent, NewMealComponent],
   template: `
   <div class="col-md-8">
     <span class="todays-meals">Today's Meals:</span>
