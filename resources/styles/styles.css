@@ -25,13 +25,12 @@ h4 {
   color: #8F9091;
 }
 
-* {
-  background-color: #1F2123;
+/** {
   color: #fff;
-}
+}*/
 
 body {
-  background-color: #1F2123;
+  /*background-color: #1F2123;*/
   font-family: 'Raleway';
   font-weight: 100;
 }
