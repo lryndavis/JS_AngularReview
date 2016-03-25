@@ -13,8 +13,10 @@ import { SortPipe } from './sort.pipe';
   pipes: [SortPipe],
   directives: [MealComponent, NewMealComponent, EditMealDetailsComponent],
   template: `
+  <div class="col-md-8">
+  <span class="todays-meals">Today's Meals:</span>
    <select (change)="onChange($event.target.value)" class="filter">
-   <option value="all">Show All Meal</option>
+   <option value="all">Show All Meals</option>
    <option value="healthy">Healthy Meals</option>
    <option value="unhealthy">Unhealthy Meals</option>
    </select>
@@ -23,6 +25,7 @@ import { SortPipe } from './sort.pipe';
   [class.selected]="currentMeal === selectedMeal"
   [meal]="currentMeal">
   </meal-display>
+  </div>
   <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
   <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal">
   </edit-meal-details>

@@ -7,7 +7,10 @@ import { Meal } from './meal.model';
   directives: [MealListComponent],
   template: `
   <div class="container">
-   <h1>Check Out All These Meal</h1>
+  <div class="header">
+   <h1>Meal Tracker</h1>
+   <h3>What did you eat today?</h3>
+   </div>
    <meal-list
    [mealList]="meals"
    (onMealSelect)="mealWasSelected($event)">
