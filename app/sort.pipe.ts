@@ -13,6 +13,10 @@ export class SortPipe implements PipeTransform {
       return input.filter((meal) => {
       return (meal.calories <= 300);
     });
+  } else if (desiredSortState === "unhealthy"){
+    return input.filter((meal) => {
+      return (meal.calories > 300);
+    });
   } else {
     return input;
     }

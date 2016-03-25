@@ -14,8 +14,9 @@ import { SortPipe } from './sort.pipe';
   directives: [MealComponent, NewMealComponent, EditMealDetailsComponent],
   template: `
    <select (change)="onChange($event.target.value)" class="filter">
-   <option value="all">Show All</option>
-   <option value="healthy">Healthy</option>
+   <option value="all">Show All Meal</option>
+   <option value="healthy">Healthy Meals</option>
+   <option value="unhealthy">Unhealthy Meals</option>
    </select>
   <meal-display *ngFor="#currentMeal of mealList | sort:filterSort"
   (click)="mealClicked(currentMeal)"
