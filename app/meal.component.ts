@@ -1,11 +1,11 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
 import { Meal } from './meal.model';
 
 @Component ({
   selector: 'meal-display',
   inputs:['meal'],
   template: `
-    <p>{{ meal.name}}</p>
+    <h4>{{ meal.name}}</h4>
     <p>{{ meal.description }}</p>
     <p>{{ meal.calories }}</p>
   `

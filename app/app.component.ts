@@ -10,7 +10,7 @@ import { Meal } from './meal.model';
    <h1>Check Out All These Meal</h1>
    <meal-list
    [mealList]="meals"
-   (onMealSelect)="MealWasSelected($event)">
+   (onMealSelect)="mealWasSelected($event)">
    </meal-list>
    </div>
   `
