@@ -9,15 +9,15 @@ import { Meal } from './meal.model';
     <div class="add-form">
       <h3>Add a Meal:</h3>
         <fieldset class="form-group">
-          <input placeholder="Your Meal" class="form-control" #newMeal>
+          <input placeholder="Your Meal" class="form-control" #newFood>
         </fieldset>
         <fieldset class="form-group">
-          <input placeholder="Details about your Meal" class="form-control #newDescription">
+          <input placeholder="Details about your Meal" class="form-control" #newDescription>
         </fieldset>
         <fieldset class="form-group">
           <input placeholder="Total Calories" class="form-control" #newCalories>
         </fieldset>
-        <button (click)="addMeal(newMeal, newDescription, newCalories)" class=" btn btn-default btn-block add-button">Add</button>
+        <button (click)="addMeal(newFood, newDescription, newCalories)" class="btn btn-default btn-block add-button">Add</button>
     </div>
   `
 })
@@ -27,10 +27,10 @@ export class NewMealComponent {
   constructor() {
     this.onSubmitNewMeal = new EventEmitter();
   }
-  addMeal(userMeal: HTMLInputElement, userDescription: HTMLInputElement, userCalories: HTMLInputElement) {
-    var newMeal = new Meal(userMeal.value, userDescription.value, parseInt(userCalories.value));
+  addMeal(userFood: HTMLInputElement, userDescription: HTMLInputElement, userCalories: HTMLInputElement) {
+    var newMeal = new Meal(userFood.value, userDescription.value, parseInt(userCalories.value));
     this.onSubmitNewMeal.emit(newMeal);
-    userMeal.value = "";
+    userFood.value = "";
     userDescription.value = "";
     userCalories.value = "";
   }
