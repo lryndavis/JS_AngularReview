@@ -5,7 +5,7 @@ import { Meal } from './meal.model';
   selector: 'edit-meal-details',
   inputs:['meal'],
   template: `
-  <div class="col-md-4">
+
     <h3>Edit Meal Info for <strong>{{ meal.name }}</strong>:</h3>
     <fieldset class="form-group">
       <input [(ngModel)]="meal.name" class="form-control" />
@@ -19,7 +19,7 @@ import { Meal } from './meal.model';
     <fieldset class="form-group">
       <input [(ngModel)]="meal.time" class="form-control" />
     </fieldset>
-  </div>
+
    `
 })
 export class EditMealDetailsComponent {
