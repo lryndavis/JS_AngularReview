@@ -20,7 +20,7 @@ import { Meal } from './meal.model';
         <fieldset class="form-group">
           <input placeholder="When was this meal eaten?" class="form-control" #newTime>
         </fieldset>
-        <button (click)="addMeal(newFood, newDescription, newCalories, newTime)" class="btn btn-default btn-block add-button">Add</button>
+        <button (click)="addMeal(newFood, newDescription, newCalories, newTime)" class="btn btn-default btn-block add-button">ADD</button>
     </div>
   `
 })

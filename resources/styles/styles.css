@@ -1,47 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700|Raleway:400,200italic,200,100italic,100,300italic,300,400italic);
 
-h1 {
-  font-family: 'Bitter';
-  font-weight: 400;
+/*Containers*/
+
+.container {
+  margin-bottom: 60px;
 }
-
-h3 {
-  font-family: 'Raleway';
-  font-weight: 100;
-  margin-top: 15px;
-}
-
-
-h4 {
-  font-family: 'Bitter';
-  font-weight: 400;
-}
-
-.selected h4{
-  color: #8F9091;
-}
-
-.selected p {
-  color: #8F9091;
-}
-
-/** {
-  color: #fff;
-}*/
 
 body {
-  /*background-color: #1F2123;*/
   font-family: 'Raleway';
-  font-weight: 100;
-}
-
-.meal-info {
-  border-bottom: 1px solid #8F9091;
-  margin-top: 10px;
-}
-
-h1 {
-  margin-bottom: 0;
+  font-weight: 200;
+  color: #403C4E;
 }
 
 .header {
@@ -57,9 +25,63 @@ h1 {
   margin-bottom: 10px;
 }
 
+.meal-info {
+  border-bottom: 1px solid #78CBB9;
+  margin-top: 10px;
+}
+
+/*Heading Fonts*/
+
+h1 {
+  margin-bottom: 0;
+  color: #78CBB9;
+  font-family: 'Bitter';
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-weight: 200;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+h4 {
+  font-family: 'Bitter';
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+h5 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+
+/*Buttons, Selects, and Other Elements*/
+
+.fa {
+  padding-bottom: 8px;
+  color: #78CBB9;
+}
+
+.btn {
+  background-color: #78CBB9;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  border: 1px solid $heading-font-color;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #FDFCF6 inset;
+  border: 1px solid $heading-font-color;
+}
+
 select {
   width: 300px;
-  height: 35px;
+  height: 50px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
