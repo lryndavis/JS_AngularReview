@@ -27,6 +27,7 @@ export class MealInfoComponent {
     this.onMealSelect = new EventEmitter();
   }
   showEdit(clickedMeal: Meal) :void {
+    //allows edit form to toggle on click 
     this.show = !this.show;
     this.selectedMeal = clickedMeal;
   }

@@ -21,6 +21,7 @@ export class MealComponent {
   constructor() {
     this.onMealSelect = new EventEmitter();
   }
+  //allows additional meal info to toggle on click
   showInfo(clickedMeal: Meal) :void {
     this.show = !this.show;
     this.selectedMeal = clickedMeal;

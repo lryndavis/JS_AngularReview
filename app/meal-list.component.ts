@@ -41,9 +41,11 @@ export class MealListComponent {
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
   }
+  //adds new meal to meal-list
   createMeal(meal:Meal): void {
     this.mealList.push(meal);
   }
+  //sorts meal by calorie count using pipe
   onChange(filterOption) {
     this.filterSort = filterOption;
   }

@@ -6,6 +6,7 @@ import { Meal } from './meal.model';
   pure: false
 })
 
+//sorts foods by caloric content 
 export class SortPipe implements PipeTransform {
   transform(input: Meal[], args){
     var desiredSortState = args[0];
