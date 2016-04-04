@@ -30,10 +30,10 @@ Project Objectives:
 
 Clone this repository: https://github.com/lryndavis/JS_AngularReview
 Run:
-`$ npm install`
-`$ bower install`
-`$ gulp build`
-`$ gulp serve`
+* `$ npm install`
+* `$ bower install`
+* `$ gulp build`
+* `$ gulp serve`
 
 ##### License
 
